@@ -78,6 +78,6 @@ void CallDefaultInterface()
     // Overridden default interface defintions do not work
     // https://github.com/dotnet/coreclr/issues/15683
     //
-    //THROW_IF_FAILED(defInterface->DefOnInterface2Ret5(&i));
-    //THROW_FAIL_IF_FALSE(i == 5);
+    THROW_IF_FAILED(defInterface->DefOnInterface2Ret5(&i));
+    THROW_FAIL_IF_FALSE(i == 5);
 }
